@@ -1,3 +1,19 @@
+
+HTML
+https://testamp2023.000webhostapp.com/index.html
+
+GET ALL
+https://testamp2023.000webhostapp.com/php/amp.php
+
+GET ID
+https://testamp2023.000webhostapp.com/php/amp.php?id=1
+
+POST
+https://testamp2023.000webhostapp.com/php/amp.php?like=true&userid=123123123123
+
+REFs
+_img_
+
 …or create a new repository on the command line
 echo "# api_rest_php" >> README.md
 git init
