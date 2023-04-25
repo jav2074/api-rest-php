@@ -1,0 +1,87 @@
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(95deg, rgba(34,193,195,1) 23%, rgb(208, 253, 45) 100%); 
+}
+
+/* CSS para GridJS */
+/* https://stackoverflow.com/questions/73359060/how-to-add-dark-theme-for-gridjs */
+.wrap .gridjs-th {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #000;
+    text-align: left;
+}
+.wrap .gridjs-td {
+    text-align: left;
+    /* white-space: nowrap; */
+    color: gray;
+}
+
+#wrapper1 .gridjs-td:first-child {
+    width: 4.375em;
+}
+#wrapper1 .gridjs-td:nth-child(2) {
+    width: 2.1875em;
+}
+#wrapper1 .gridjs-td:nth-child(3) {
+    width: 29.375em;
+}
+/* #wrapper1 .gridjs-td:last-child {
+    width: 50%;
+} */
+
+#one .gridjs-table {
+    width: 100%;
+}
+#one .gridjs-td:first-child {       /* #one .gridjs-td:nth-child(2)  */
+    width: 40%;
+}
+#one .gridjs-td:last-child {
+    width: 60%;
+}
+
+#one .gridjs-footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-text-fill-color: whitesmoke;
+}
+#one .gridjs-pagination .gridjs-pages button {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    -webkit-text-fill-color: black;
+}
+
+
+
+/* oneNames */
+#oneNames .gridjs-table {
+    width: 100%;
+}
+/* #oneNames .gridjs-td:first-child {
+    width: 20%;
+}
+#oneNames .gridjs-td:last-child {
+    width: 60%;
+} */
+
+#oneNames .gridjs-footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-text-fill-color: whitesmoke;
+}
+#oneNames .gridjs-pagination .gridjs-pages button {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    -webkit-text-fill-color: black;
+}
+
+#oneAvisos {
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-text-fill-color: whitesmoke;
+}
+
+/* #outputMustache {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: whitesmoke;
+} */
+
+/* AmCharts */
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}

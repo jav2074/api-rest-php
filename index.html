@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="css/css.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- GridJS -->
+    <!-- <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet"/> -->
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- GridJS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+    <!-- GridJS UNPKG -->
+    <!-- <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script type="module">
+        import {
+            Grid,
+            html
+        } from "https://unpkg.com/gridjs?module";
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+    
+	<!-- AmCharts -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.18.2.min.js'></script>
+	
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
+
+    <title>AMP Email Test</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/1448/PNG/512/42598rocket_99004.png">
+
+</head>
+<body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+
+        <!-- <div class="jumbotron jumbotron-fluid bg-dark text-white text-center"> -->
+        <div class="container-fluid p-3 mt-0 mb-2 bg-dark text-white text-center">
+            <h1>AMP Email Test</h1>
+            <p>https://testamp2023.000webhostapp.com/amp.php</p>
+        </div>
+        <div class="container-fluid text-right">
+            <button type="button" class="btn btn-primary" onclick="location.reload()">Actualizar</button>
+        </div>
+        
+        
+        <div class="container-fluid p-3 ml-2 mb-2">
+            <div class="row">
+                <!-- <div class="col-sm-4 text-center">
+                    <div id='myDiv'></div>
+                </div> -->
+                
+                <div class="col-sm-5 text-center">
+                    <h1>AMP Email Test</h1>
+                    <!-- AmCharts -->
+                    <div id="chartdiv"></div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="wrap" id="wrapperAMP"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-3 mt-0 mb-2">
+            <div class="" id="oneAvisos">
+                <pre>
+                    {{urlFake_01 | json}}
+                </pre>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+</body>
+</html>
